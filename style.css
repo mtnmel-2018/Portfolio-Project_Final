@@ -1,4 +1,4 @@
-/* Basic Reset */
+/* CSS Reset */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -9,25 +9,24 @@ body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     background-color: #f4f4f4; /* Light gray background */
-    color: #333; /* Dark gray text */
+    color: #333; /* Dark text color */
 }
 
 /* Header Styles */
 header {
-    background: #35424a; /* Dark slate gray background */
+    background-color: #35424a; /* Dark slate gray */
     color: white; /* White text */
     padding: 10px 0;
-    text-align: center; /* Center text */
 }
 
 nav ul {
     list-style: none; /* No bullet points */
-    display: flex; /* Flexbox for horizontal layout */
-    justify-content: center; /* Center nav items */
+    display: flex; /* Use Flexbox */
+    justify-content: center; /* Center navigation items */
 }
 
 nav ul li {
-    margin: 0 15px; /* Space between nav items */
+    margin: 0 15px; /* Space between items */
 }
 
 nav ul li a {
@@ -37,54 +36,89 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #e78e7e; /* Change color on hover */
+    color: #e78e7e; /* Light pink on hover */
 }
 
-/* Section Styles */
-section {
-    margin: 20px auto; /* Margin on top and bottom, center on sides */
-    padding: 20px; /* Padding for inner spacing */
+/* About Me Styles */
+#about {
+    display: flex; /* Use Flexbox */
+    flex-direction: column; /* Stack vertically */
+    align-items: center; /* Center items */
+    margin: 20px; /* Add margin */
+    padding: 20px; /* Add padding */
     background: white; /* White background */
     border-radius: 8px; /* Rounded corners */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
     max-width: 800px; /* Max width for content */
 }
 
-/* About Me Styles */
 .profile-img {
-    max-width: 150px; /* Max width for profile image */
-    border-radius: 50%; /* Circular image */
-    display: block; /* Block level to center */
-    margin: 10px auto; /* Auto margins for center alignment */
+    max-width: 150px; /* Circular image */
+    border-radius: 50%; /* Round image */
+    display: block; /* Block-level element */
+    margin: 10px auto; /* Center alignment */
 }
 
-/* Skills Styles */
+#about p {
+    text-align: center; /* Center bio text */
+    margin-top: 10px; /* Margin above bio */
+}
+
+/* Skills Section */
+#skills {
+    display: flex; /* Use Flexbox */
+    flex-wrap: wrap; /* Wrap items to next line */
+    justify-content: center; /* Center skills */
+    margin: 20px; /* Add margin */
+}
+
 #skills ul {
     list-style-type: none; /* No bullet points */
+    padding: 0; /* Remove padding */
 }
 
 #skills li {
     background: #e4e4e4; /* Light gray background */
-    margin: 5px 0; /* Vertical spacing */
+    margin: 5px; /* Space between skills */
     padding: 10px; /* Inner padding */
     border-radius: 5px; /* Rounded corners */
 }
 
-/* Project Styles */
+/* Projects Section */
+#projects {
+    display: flex; /* Use Flexbox */
+    flex-wrap: wrap; /* Wrap items to next line */
+    justify-content: space-around; /* Space between project cards */
+    margin: 20px; /* Add margin */
+}
+
 .project {
-    margin-bottom: 20px; /* Space below each project */
+    background: white; /* White background for cards */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin: 10px; /* Space around cards */
+    padding: 15px; /* Inner padding */
+    max-width: 300px; /* Max width for each card */
+    text-align: center; /* Center content */
 }
 
 .project img {
-    max-width: 100%; /* Responsive images */
-    height: auto; /* Maintain aspect ratio */
+    max-width: 100%; /* Responsive image */
     border-radius: 5px; /* Rounded corners for images */
 }
 
-/* Contact Form Styles */
+/* Contact Section */
+#contact {
+    margin: 20px; /* Add margin */
+    padding: 20px; /* Add padding */
+    background: white; /* White background */
+    border-radius: 8px; /* Rounded corners */
+    max-width: 800px; /* Max width for content */
+}
+
 form {
-    display: flex; /* Flexbox layout for form */
-    flex-direction: column; /* Stack form elements vertically */
+    display: flex; /* Flexbox for form */
+    flex-direction: column; /* Stack inputs vertically */
 }
 
 form label {
@@ -101,12 +135,12 @@ form textarea {
 }
 
 form input[type="submit"] {
-    background: #35424a; /* Same dark background as header */
+    background: #35424a; /* Dark slate gray */
     color: white; /* White text */
     border: none; /* No border */
     padding: 10px; /* Inner padding */
     margin-top: 10px; /* Space above button */
-    cursor: pointer; /* Pointer cursor on hover */
+    cursor: pointer; /* Pointer cursor */
     transition: background 0.3s; /* Smooth background change */
 }
 
@@ -120,7 +154,4 @@ footer {
     padding: 10px 0; /* Padding on top and bottom */
     background: #35424a; /* Same background as header */
     color: white; /* White text */
-    position: relative; /* Position relative for footer */
-    bottom: 0; /* Sticks to bottom of content */
-    width: 100%; /* Full width */
 }
