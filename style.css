@@ -5,6 +5,17 @@
     padding: 0;
 }
 
+html, body {
+    height: 100%; /* Ensure the body takes full height */
+    margin: 0; /* Remove default margins */
+}
+
+.container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Full viewport height */
+}
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
