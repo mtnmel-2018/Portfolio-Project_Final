@@ -8,14 +8,14 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: #f4f4f4; /* Light gray background */
-    color: #333; /* Dark text color */
+    background-color: #505663; /* Light gray background */
+    color: whitesmoke; /* Dark text color */
 }
 
 /* Header Styles */
 header {
-    background-color: #35424a; /* Dark slate gray */
-    color: white; /* White text */
+    background-color: #638d8b; /* Dark slate gray */
+    color: whitesmoke; /* White text */
     padding: 10px 0;
 }
 
@@ -36,7 +36,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #e78e7e; /* Light pink on hover */
+    color: #b8d4f3; /* Light pink on hover */
 }
 
 /* About Me Styles */
