@@ -9,7 +9,7 @@ body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     background-color: #505663; /* Gray background */
-    color: whitesmoke; /* Light text color */
+    color: rgb(116, 101, 101); /* Light text color */
 }
 
 /* Header Styles */
