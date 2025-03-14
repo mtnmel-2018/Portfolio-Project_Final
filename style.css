@@ -10,7 +10,7 @@
 
 body {
     /* 3. Add a colorful gradient background */
-    background: linear-gradient(135deg, #e0e2e2, #a4b8af); /* Gradient, grey to green */
+    background: linear-gradient(135deg, #f7e6f1, #a4b8af); /* Gradient, grey to green */
     
     /* 4. Add accessible line-height */
     line-height: 1.5;
