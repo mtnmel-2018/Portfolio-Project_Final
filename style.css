@@ -1,63 +1,73 @@
 /* 1. Use a more-intuitive box-sizing model */
 *, *::before, *::after {
     box-sizing: border-box;
-  }
-  /* 2. Remove default margin */
-  * {
+}
+
+/* 2. Remove default margin */
+* {
     margin: 0;
-  }
-  body {
-    /* 3. Add accessible line-height */
+}
+
+body {
+    /* 3. Add a colorful gradient background */
+    background: linear-gradient(135deg, #FFB6C1, #87CEFA); /* Light pink to light blue gradient */
+    
+    /* 4. Add accessible line-height */
     line-height: 1.5;
-    /* 4. Improve text rendering */
+
+    /* 5. Improve text rendering */
     -webkit-font-smoothing: antialiased;
-  }
-  /* 5. Improve media defaults */
-  img, picture, video, canvas, svg {
+}
+
+/* 5. Improve media defaults */
+img, picture, video, canvas, svg {
     display: block;
     max-width: 100%;
-  }
-  /* 6. Inherit fonts for form controls */
-  input, button, textarea, select {
+}
+
+/* 6. Inherit fonts for form controls */
+input, button, textarea, select {
     font: inherit;
-  }
-  /* 7. Avoid text overflows */
-  p, h1, h2, h3, h4, h5, h6 {
+}
+
+/* 7. Avoid text overflows */
+p, h1, h2, h3, h4, h5, h6 {
     overflow-wrap: break-word;
-  }
-  /* 8. Improve line wrapping */
-  p {
+}
+
+/* 8. Improve line wrapping */
+p {
     text-wrap: pretty;
-  }
-  h1, h2, h3, h4, h5, h6 {
+}
+
+h1, h2, h3, h4, h5, h6 {
     text-wrap: balance;
-  }
-  /*
+}
+
+/*
     9. Create a root stacking context
-  */
-  #root, #__next {
+*/
+#root, #__next {
     isolation: isolate;
-  }
+}
 
-  /*Makes header a flex container and changes the background color */
-  header {
+/* Makes header a flex container and changes the background color */
+header {
     display: flex;
-    background-color: #789387;
-  }
+    background-color: #789387; /* You can keep this or change it as needed */
+}
 
-  
-  #kids {
+#kids {
     border-radius: 50%;
     height: 25%;
     width: 25%;
-  }
+}
 
-  #project_cards {
+#project_cards {
     display: flex;
-    
-  }
+}
 
-  .form-group {
+.form-group {
     margin-bottom: 15px;
 }
 
@@ -74,15 +84,15 @@
 }
 
 #about_me, #skills, #projects, #contact {
-  text-align: center;
-  justify-content: center;
-  list-style-position: inside;
+    text-align: center;
+    justify-content: center;
+    list-style-position: inside;
 }
 
 header {
-  justify-content: center;
+    justify-content: center;
 }
 
 a:hover {
-  text-decoration: underline;
+    text-decoration: underline;
 }
