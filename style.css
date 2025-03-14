@@ -1,98 +1,59 @@
-/* 1. Use a more-intuitive box-sizing model */
-*, *::before, *::after {
-    box-sizing: border-box;
+/* About Me Section */
+.header-title {
+    color: #B0E0E6; /* Light color for the header */
+    text-align: center; /* Centered text */
 }
 
-/* 2. Remove default margin */
-* {
-    margin: 0;
+#about_me {
+    background-color: #d8dfdf; /* Light background color for contrast */
+    padding: 20px; /* Padding for the section */
 }
 
-body {
-    /* 3. Add a colorful gradient background */
-    background: linear-gradient(135deg, #f7e6f1, #a4b8af); /* Gradient, grey to green */
-    
-    /* 4. Add accessible line-height */
-    line-height: 1.5;
-
-    /* 5. Improve text rendering */
-    -webkit-font-smoothing: antialiased;
+#about_me h1 {
+    font-weight: bold; /* Make the header bold */
+    color: rgb(133, 168, 161); /* Change header text color to white */
 }
 
-/* 5. Improve media defaults */
-img, picture, video, canvas, svg {
-    display: block;
-    max-width: 100%;
+.button-container {
+    display: flex; /* Use flexbox to space buttons */
+    justify-content: center; /* Center the buttons */
+    gap: 10px; /* Space between buttons */
+    margin-top: 20px; /* Space above the buttons */
 }
 
-/* 6. Inherit fonts for form controls */
-input, button, textarea, select {
-    font: inherit;
+#Family {
+    width: 200px; /* Set width for the image */
+    height: 200px; /* Set height for the image */
+    border-radius: 100%; /* Make the image round */
+    margin-bottom: 50px; /* Space below the image */
 }
 
-/* 7. Avoid text overflows */
-p, h1, h2, h3, h4, h5, h6 {
-    overflow-wrap: break-word;
+section {
+    margin-top: 40px; /* Ensure spacing between sections */
 }
 
-/* 8. Improve line wrapping */
-p {
-    text-wrap: pretty;
+#projects {
+    text-align: center; /* Center the Projects heading */
 }
 
-h1, h2, h3, h4, h5, h6 {
-    text-wrap: balance;
+#contact h2 {
+    text-align: center; /* Center the Contact heading */
 }
 
-/*
-    9. Create a root stacking context
-*/
-#root, #__next {
-    isolation: isolate;
+button[type="submit"] {
+    margin-top: 20px; /* Space above the submit button */
+    width: 150px; /* Optional: Set a width for consistency */
+}
+/* About Me Section */
+#Family {
+    width: 300px; /* Increase the width of the image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 15px; /* Apply rounded edges to the image */
+    margin-bottom: 20px; /* Add some space below the image */
 }
 
-/* Makes header a flex container and changes the background color */
-header {
-    display: flex;
-    background-color: #789387; /* You can keep this or change it as needed */
-}
-
-#kids {
-    border-radius: 50%;
-    height: 25%;
-    width: 25%;
-}
-
-#project_cards {
-    display: flex;
-}
-
-.form-group {
-    margin-bottom: 15px;
-}
-
-.form-group label {
-    display: inline-block;
-    width: 150px; /* Fixed width for all labels */
-    text-align: right; /* Right-align labels */
-    margin-right: 10px; /* Space between label and input */
-}
-
-.form-group input, .form-group textarea {
-    width: calc(100% - 170px); /* Adjust width based on label size */
-    padding: 8px; /* Add some padding */
-}
-
-#about_me, #skills, #projects, #contact {
-    text-align: center;
-    justify-content: center;
-    list-style-position: inside;
-}
-
-header {
-    justify-content: center;
-}
-
-a:hover {
-    text-decoration: underline;
-}
+.cursive-text {
+    font-family: 'Great Vibes', cursive; /* Change to cursive font */
+    text-align: center; /* Center align the paragraph text */
+    font-size: 18px; /* Adjust font size as needed */
+    margin: 20px 0; /* Add some space around the paragraph */
