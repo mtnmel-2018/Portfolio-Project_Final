@@ -1,176 +1,102 @@
-/* CSS Reset */
 * {
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
 }
 
-html, body {
-    height: 100%; /* Ensure the body takes full height */
-    margin: 0; /* Remove default margins */
+body {
+    font-family: 'cursive', cursive;
+    margin: 0;
+    padding: 0;
+    background-color: #596d65; /* Fallback color */
+    background-image: url(cardinal.jpg); /* Set the background image */
+    background-size: cover; /* Ensures the background covers the entire area */
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat; /* Prevents the background from repeating */
 }
 
 .container {
-    display: flex;
-    justify-content: center; /* Center horizontally */
-    text-align: center; /* Center bio text */
-    align-items: center; /* Center vertically */
-    height: 100vh; /* Full viewport height */
-}
-body {
-    body {
-        display: flex;
-        justify-content: center; /* Center horizontally */
-        align-items: center; /* Center vertically */
-        height: 100vh; /* Full viewport height */
-        margin: 0; /* Remove default margin */
-    }
-    
-    #about {
-
-        text-align: center; /* Center text */
-        padding: 20px; /* Optional padding */
-        border: 1px solid #ccc; /* Optional border for visibility */
-/* Header Styles */
-header {
-    background-color: #3e5755; /* Dark slate gray */
-    color: whitesmoke; /* Light text */
-    padding: 10px 0;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(235, 238, 235, 0.9); /* Slightly transparent background for readability */
+    box-shadow: 0 0 10px rgba(190, 196, 176, 0.1);
+    border-radius: 8px;
 }
 
-nav ul {
-    list-style: none; /* No bullet points */
-    display: flex; /* Use Flexbox */
-    justify-content: center; /* Center navigation items */
+.content {
+    text-align: center;
 }
 
-nav ul li {
-    margin: 0 15px; /* Space between items */
+.title {
+    font-family: 'Dancing Script', cursive; /* Use a specific cursive font */
+    color: #855766;
+    font-size: 2.5em; /* Base font size */
+    margin-bottom: 10px;
+    text-align: center; /* Center the title */
 }
 
-nav ul li a {
-    color: white; /* White text */
-    text-decoration: none; /* No underline */
-    transition: color 0.3s; /* Smooth color transition */
+.subtitle {
+    color: #576568;
+    font-size: 1.2em;
 }
 
-nav ul li a:hover {
-    color: #b8d4f3; /* Light blue on hover */
+.responsive-img {
+    max-width: 50%; /* Set max-width to 50% or any other desired percentage */
+    height: auto;     /* Maintains the aspect ratio */
+    display: block;   /* Removes any inline spacing (like beneath an inline image) */
+    margin: 0 auto;   /* Centers the image if it's a block-level element */
 }
 
-/* About Me Styles */
-#about {
-    display: flex; /* Use Flexbox */
-    flex-direction: column; /* Stack vertically */
-    align-items: center; /* Center items */
-    margin: 20px; /* Add margin */
-    padding: 20px; /* Add padding */
-    background: white; /* White background */
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    max-width: 800px; /* Max width for content */
+.quote {
+    font-style: italic;
+    margin-top: 20px;
+    color: #62776d;
 }
 
-.profile-img {
-    max-width: 150px; /* Circular image */
-    border-radius: 50%; /* Round image */
-    display: block; /* Block-level element */
-    margin: 10px auto; /* Center alignment */
+ul {
+    list-style-type: none;
+    padding: 0;
 }
 
-#about p {
-    text-align: center; /* Center bio text */
-    margin-top: 10px; /* Margin above bio */
+li {
+    margin-bottom: 10px;
 }
 
-/* Skills Section */
-#skills {
-    display: flex; /* Use Flexbox */
-    flex-wrap: wrap; /* Wrap items to next line */
-    justify-content: center; /* Center skills */
-    margin: 20px; /* Add margin */
+blockquote {
+    font-style: italic;
+    margin-top: 20px;
+    color: #0c1403;
 }
 
-#skills ul {
-    list-style-type: none; /* No bullet points */
-    padding: 0; /* Remove padding */
-}
-
-#skills li {
-    background: #e4e4e4; /* Light gray background */
-    margin: 5px; /* Space between skills */
-    padding: 10px; /* Inner padding */
-    border-radius: 5px; /* Rounded corners */
-}
-
-/* Projects Section */
-#projects {
-    display: flex; /* Use Flexbox */
-    flex-wrap: wrap; /* Wrap items to next line */
-    justify-content: space-around; /* Space between project cards */
-    margin: 20px; /* Add margin */
-}
-
-.project {
-    background: white; /* White background for cards */
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    margin: 10px; /* Space around cards */
-    padding: 15px; /* Inner padding */
-    max-width: 300px; /* Max width for each card */
-    text-align: center; /* Center content */
-}
-
-.project img {
-    max-width: 100%; /* Responsive image */
-    border-radius: 5px; /* Rounded corners for images */
-}
-
-/* Contact Section */
-#contact {
-    margin: 20px; /* Add margin */
-    padding: 20px; /* Add padding */
-    background: white; /* White background */
-    border-radius: 8px; /* Rounded corners */
-    max-width: 800px; /* Max width for content */
-}
-
-form {
-    display: flex; /* Flexbox for form */
-    flex-direction: column; /* Stack inputs vertically */
-}
-
-form label {
-    margin-top: 10px; /* Space above labels */
-}
-
-form input[type="text"],
-form input[type="email"],
-form textarea {
-    padding: 10px; /* Inner padding */
-    margin-top: 5px; /* Space above inputs */
-    border: 1px solid #ccc; /* Border style */
-    border-radius: 4px; /* Rounded corners */
-}
-
-form input[type="submit"] {
-    background: #35424a; /* Dark slate gray */
-    color: white; /* White text */
-    border: none; /* No border */
-    padding: 10px; /* Inner padding */
-    margin-top: 10px; /* Space above button */
-    cursor: pointer; /* Pointer cursor */
-    transition: background 0.3s; /* Smooth background change */
-}
-
-form input[type="submit"]:hover {
-    background: #e78e7e; /* Change color on hover */
-}
-
-/* Footer Styles */
 footer {
-    text-align: center; /* Centered text */
-    padding: 10px 0; /* Padding on top and bottom */
-    background: #35424a; /* Same background as header */
-    color: white; /* White text */
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: rgb(79, 100, 101, 0.9); /* Slightly transparent for effect */
+    color: #fff;
+    border-radius: 0 0 8px 8px;
+}
+
+#tribute-link {
+    color: #e78e7e;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+
+    .title {
+        font-size: 1.5em;
+    }
+
+    .subtitle {
+        font-size: 1em;
+    }
+
+    .responsive-img {
+        max-width: 100%; /* Adjusts image size for smaller screens */
+    }
 }
