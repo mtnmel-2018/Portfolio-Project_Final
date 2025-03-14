@@ -27,6 +27,7 @@ body {
     }
     
     #about {
+        
         text-align: center; /* Center text */
         padding: 20px; /* Optional padding */
         border: 1px solid #ccc; /* Optional border for visibility */
