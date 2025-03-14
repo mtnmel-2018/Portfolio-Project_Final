@@ -25,6 +25,19 @@ img, picture, video, canvas, svg {
     max-width: 100%;
 }
 
+/* Centering image container */
+.image-container {
+    display: flex;
+    justify-content: center; /* Centers the image horizontally */
+    align-items: center; /* Centers the image vertically */
+    height: 100vh; /* Full height of the viewport */
+}
+
+#bjj-image {
+    max-width: 100%; /* Ensures responsiveness */
+    height: auto; /* Maintains aspect ratio */
+}
+
 /* 6. Inherit fonts for form controls */
 input, button, textarea, select {
     font: inherit;
