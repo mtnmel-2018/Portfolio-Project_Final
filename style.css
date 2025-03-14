@@ -27,12 +27,10 @@ body {
     }
     
     #about {
-        
+
         text-align: center; /* Center text */
         padding: 20px; /* Optional padding */
         border: 1px solid #ccc; /* Optional border for visibility */
-    }
-
 /* Header Styles */
 header {
     background-color: #3e5755; /* Dark slate gray */
