@@ -10,7 +10,7 @@
 
 body {
     /* 3. Add a colorful gradient background */
-    background: linear-gradient(135deg, #FFB6C1, #87CEFA); /* Light pink to light blue gradient */
+    background: linear-gradient(135deg, #e0e2e2, #a4b8af); /* Gradient, grey to green */
     
     /* 4. Add accessible line-height */
     line-height: 1.5;
@@ -23,19 +23,6 @@ body {
 img, picture, video, canvas, svg {
     display: block;
     max-width: 100%;
-}
-
-/* Centering image container */
-.image-container {
-    display: flex;
-    justify-content: center; /* Centers the image horizontally */
-    align-items: center; /* Centers the image vertically */
-    height: 100vh; /* Full height of the viewport */
-}
-
-#bjj-image {
-    max-width: 100%; /* Ensures responsiveness */
-    height: auto; /* Maintains aspect ratio */
 }
 
 /* 6. Inherit fonts for form controls */
