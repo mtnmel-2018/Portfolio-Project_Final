@@ -1,102 +1,88 @@
-* {
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
     box-sizing: border-box;
-}
-
-body {
-    font-family: 'cursive', cursive;
+  }
+  /* 2. Remove default margin */
+  * {
     margin: 0;
-    padding: 0;
-    background-color: #596d65; /* Fallback color */
-    background-image: url(cardinal.jpg); /* Set the background image */
-    background-size: cover; /* Ensures the background covers the entire area */
-    background-position: center; /* Centers the background image */
-    background-repeat: no-repeat; /* Prevents the background from repeating */
+  }
+  body {
+    /* 3. Add accessible line-height */
+    line-height: 1.5;
+    /* 4. Improve text rendering */
+    -webkit-font-smoothing: antialiased;
+  }
+  /* 5. Improve media defaults */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  /* 6. Inherit fonts for form controls */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  /* 7. Avoid text overflows */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  /* 8. Improve line wrapping */
+  p {
+    text-wrap: pretty;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+  }
+  /*
+    9. Create a root stacking context
+  */
+  #root, #__next {
+    isolation: isolate;
+  }
+
+  /*Makes header a flex container and changes the background color */
+  header {
+    display: flex;
+    background-color: #dadcdd;
+  }
+
+  
+  #kids {
+    border-radius: 50%;
+    height: 25%;
+    width: 25%;
+  }
+
+  #project_cards {
+    display: flex;
+    
+  }
+
+  .form-group {
+    margin-bottom: 15px;
 }
 
-.container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: rgba(235, 238, 235, 0.9); /* Slightly transparent background for readability */
-    box-shadow: 0 0 10px rgba(190, 196, 176, 0.1);
-    border-radius: 8px;
+.form-group label {
+    display: inline-block;
+    width: 150px; /* Fixed width for all labels */
+    text-align: right; /* Right-align labels */
+    margin-right: 10px; /* Space between label and input */
 }
 
-.content {
-    text-align: center;
+.form-group input, .form-group textarea {
+    width: calc(100% - 170px); /* Adjust width based on label size */
+    padding: 8px; /* Add some padding */
 }
 
-.title {
-    font-family: 'Dancing Script', cursive; /* Use a specific cursive font */
-    color: #855766;
-    font-size: 2.5em; /* Base font size */
-    margin-bottom: 10px;
-    text-align: center; /* Center the title */
+#about_me, #skills, #projects, #contact {
+  text-align: center;
+  justify-content: center;
+  list-style-position: inside;
 }
 
-.subtitle {
-    color: #576568;
-    font-size: 1.2em;
+header {
+  justify-content: center;
 }
 
-.responsive-img {
-    max-width: 50%; /* Set max-width to 50% or any other desired percentage */
-    height: auto;     /* Maintains the aspect ratio */
-    display: block;   /* Removes any inline spacing (like beneath an inline image) */
-    margin: 0 auto;   /* Centers the image if it's a block-level element */
-}
-
-.quote {
-    font-style: italic;
-    margin-top: 20px;
-    color: #62776d;
-}
-
-ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-li {
-    margin-bottom: 10px;
-}
-
-blockquote {
-    font-style: italic;
-    margin-top: 20px;
-    color: #0c1403;
-}
-
-footer {
-    text-align: center;
-    margin-top: 20px;
-    padding: 10px;
-    background-color: rgb(79, 100, 101, 0.9); /* Slightly transparent for effect */
-    color: #fff;
-    border-radius: 0 0 8px 8px;
-}
-
-#tribute-link {
-    color: #e78e7e;
-    text-decoration: none;
-    font-weight: normal;
-}
-
-/* Responsive Design */
-@media screen and (max-width: 600px) {
-    .container {
-        padding: 10px;
-    }
-
-    .title {
-        font-size: 1.5em;
-    }
-
-    .subtitle {
-        font-size: 1em;
-    }
-
-    .responsive-img {
-        max-width: 100%; /* Adjusts image size for smaller screens */
-    }
+a:hover {
+  text-decoration: underline;
 }
